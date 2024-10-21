@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Books</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
   <script src="books.js" defer></script>
   <script src="https://kit.fontawesome.com/03673f4e3f.js" crossorigin="anonymous"></script>
 </head>
@@ -27,13 +28,14 @@
           <i class="fa-solid fa-xmark"></i>
         </button>
         <ul class="menu__links">
-          <li class="menu__list"><a class="menu__link" href="#" onclick="closeMenu()">Home</a></li>
-          <li class="menu__list"><a class="menu__link" href="#features" onclick="closeMenu()">Books</a></li>
-          <li class="menu__list"><a class="menu__link no-cursor" href="#" onclick="closeMenu()">Contact</a></li>
+          <li class="menu__list"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__list"><a class="menu__link" href="#features">Books</a></li>
+          <li class="menu__list"><a class="menu__link no-cursor" href="#">Contact</a></li>
         </ul>
       </div>
     </nav>
   </section>
+
   <main id="books__main">
     <section>
       <div class="container">
@@ -47,8 +49,8 @@
               <option value="RATING">Rating</option>
             </select>
           </div>
-          <div class="books">
-            
+          <div class="books books__loading">
+            <i class="fa-solid fa-spinner books__loading--spinner"></i>
           </div>
         </div>
       </div>
@@ -77,5 +79,6 @@
       </div>
     </div>
   </footer>
+
 </body>
 </html>
